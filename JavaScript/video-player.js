@@ -156,71 +156,71 @@ const getVideoPlayer = document.querySelector(".video-player");
 const allVideo = [
     {
        name: "video 1",
-       video: "../assest/video/1.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342170/study-zone/15_r4fuyw.mp4",
     },
     {
        name: "video 2",
-       video: "../assest/video/2.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342166/study-zone/11_earutr.mp4",
     },
     {
        name: "video 3",
-       video: "../assest/video/3.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342164/study-zone/14_qbrtgy.mp4",
     },
     {
        name: "video 4",
-       video: "../assest/video/4.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342163/study-zone/3_uvfx9y.mp4",
     },
     {
        name: "video 5",
-       video: "../assest/video/5.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342160/study-zone/4_dwumiv.mp4",
     },
     {
        name: "video 6",
-       video: "../assest/video/6.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342154/study-zone/5_vfoykd.mp4",
     },
     {
        name: "video 7",
-       video: "../assest/video/7.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342152/study-zone/8_unik8r.mp4",
     },
     {
        name: "video 8",
-       video: "../assest/video/8.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342151/study-zone/7_it6sm2.mp4",
     },
     {
        name: "video 9",
-       video: "../assest/video/9.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342150/study-zone/6_yhobhy.mp4",
     },
     {
        name: "video 10",
-       video: "../assest/video/10.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342146/study-zone/13_fiwsem.mp4",
     },
     {
        name: "video 11",
-       video: "../assest/video/11.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342144/study-zone/17_cb4jbi.mp4",
     },
     {
        name: "video 12",
-       video: "../assest/video/12.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342144/study-zone/12_wxv4il.mp4",
     },
     {
        name: "video 13",
-       video: "../assest/video/13.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342136/study-zone/2_ubt9kk.mp4",
     },
     {
        name: "video 14",
-       video: "../assest/video/14.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342131/study-zone/16_zhquwp.mp4",
     },
     {
        name: "video 15",
-       video: "../assest/video/15.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342170/study-zone/15_r4fuyw.mp4",
     },
     {
        name: "video 16",
-       video: "../assest/video/16.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342166/study-zone/11_earutr.mp4",
     },
     {
        name: "video 17",
-       video: "../assest/video/17.mp4",
+       video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342164/study-zone/14_qbrtgy.mp4",
     },
 ];
 

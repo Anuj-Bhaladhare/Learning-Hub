@@ -1,0 +1,15 @@
+.main-content{
+    display: flex;
+    gap: 30%;
+}
+
+/* .main-img{
+    max-width: 450px;
+} */
+
+.navbaar-container{
+    display: flex;
+    max-width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}

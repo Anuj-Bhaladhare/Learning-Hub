@@ -11,19 +11,25 @@
 </head>
 <body>
     <nav class="sidebar">
-       <header>
-          <h2>Codehaal</h2>
+       <header class="back-to-home">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Back to Home</p>
        </header>
        <div class="scrollbaar-inner"> <!-- Corrected class name -->
            <div class="example">
                 
            </div>
        </div>
-       <footer>
-         <h3>This is footer</h3>
+       <footer class="Certificate">
+           <i class="fa-solid fa-gift"></i>
+           <p>Certificate</p>
        </footer>
     </nav>
-    <div class="content">
+    <div class="content all-video-container">
+        <div class="pre-next-video-button">
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+        </div>
         <!-- ============ Video Player ================= -->
         <div class="container show-controls">
             <div class="wrapper">
@@ -67,6 +73,7 @@
             <video class="video-player" src="https://res.cloudinary.com/dsxheywlc/video/upload/v1692342170/study-zone/15_r4fuyw.mp4"></video>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/c33a357a73.js" crossorigin="anonymous"></script>
     <script src="../JavaScript/video-player.js"></script>
 </body>
 </html>

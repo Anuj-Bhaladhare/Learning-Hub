@@ -76,7 +76,7 @@ const allCourses = [
     {
         id:	"OM401",
         title:	"Operations Management Fundamentals",
-        description:	"This course covers the basics of operations management, including process design, capacity planning, inventory management, and quality control. Students will learn how to optimize operations to improve efficiency, productivity, and customer satisfaction.",
+        description: "This course covers the basics of operations management, including process design, capacity planning, inventory management, and quality control. Students will learn how to optimize operations to improve efficiency, productivity, and customer satisfaction.",
         image:"https://codehelp-apis.vercel.app/get-top-courses/Business/Operations%20Management%20Fundamentals.png",
     },
     {
@@ -100,7 +100,7 @@ const allCourses = [
     {
         id:	"ID301",
         title:	"Industrial Design Essentials",
-        description:	"This course covers the fundamental concepts and techniques used in industrial design, including sketching, prototyping, modeling, and design for manufacturing. Students will learn how to create innovative and functional products that meet user needs and market demands.",
+        description: "This course covers the fundamental concepts and techniques used in industrial design, including sketching, prototyping, modeling, and design for manufacturing. Students will learn how to create innovative and functional products that meet user needs and market demands.",
         image:"https://codehelp-apis.vercel.app/get-top-courses/Design/Industrial%20Design%20Essentials.png",
     },
     {

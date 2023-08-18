@@ -155,78 +155,81 @@ const getVideoPlayer = document.querySelector(".video-player");
 
 const allVideo = [
     {
-       name: "video 1",
+       name: "introduction of this cource lecture - 1",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342170/study-zone/15_r4fuyw.mp4",
     },
     {
-       name: "video 2",
+       name: "How to create the Project lecture - 2",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342166/study-zone/11_earutr.mp4",
     },
     {
-       name: "video 3",
+       name: "construction and working lecture - 3",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342164/study-zone/14_qbrtgy.mp4",
     },
     {
-       name: "video 4",
+       name: "Web Development Fundamentals lecture - 4",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342163/study-zone/3_uvfx9y.mp4",
     },
     {
-       name: "video 5",
+       name: "Software Testing Fundamentals lecture - 5",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342160/study-zone/4_dwumiv.mp4",
     },
     {
-       name: "video 6",
+       name: "Mobile App Development with React Native lecture - 6",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342154/study-zone/5_vfoykd.mp4",
     },
     {
-       name: "video 7",
+       name: "Finance for Non-Financial Managers lecture - 7",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342152/study-zone/8_unik8r.mp4",
     },
     {
-       name: "video 8",
+       name: "Operations Management Fundamentals lecture - 8",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342151/study-zone/7_it6sm2.mp4",
     },
     {
-       name: "video 9",
+       name: "Graphic Design Fundamentals lecture - 9",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342150/study-zone/6_yhobhy.mp4",
     },
     {
-       name: "video 10",
+       name: "Industrial Design Essentials lecture - 10",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342146/study-zone/13_fiwsem.mp4",
     },
     {
-       name: "video 11",
+       name: "Project Management Essentials1 lecture - 11",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342144/study-zone/17_cb4jbi.mp4",
     },
     {
-       name: "video 12",
+       name: "User Experience Design lecture - 12",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342144/study-zone/12_wxv4il.mp4",
     },
     {
-       name: "video 13",
+       name: "Mobile App Development with React Native lecture - 13",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342136/study-zone/2_ubt9kk.mp4",
     },
     {
-       name: "video 14",
+       name: "Operations Management Fundamentals lecture - 14",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342131/study-zone/16_zhquwp.mp4",
     },
     {
-       name: "video 15",
+       name: "Project Management Essentials lecture - 15",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342170/study-zone/15_r4fuyw.mp4",
     },
     {
-       name: "video 16",
+       name: "Operations Management Fundamentals lecture - 16",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342166/study-zone/11_earutr.mp4",
     },
     {
-       name: "video 17",
+       name: "Mobile App Development with React Native lecture - 17",
        video: "https://res.cloudinary.com/dsxheywlc/video/upload/v1692342164/study-zone/14_qbrtgy.mp4",
     },
 ];
 
 allVideo.forEach( (key) => {
     videoSource.innerHTML += `
-       <button onClick="videoPlayerChange('${key.video}')">${key.name}</button> <br/>
+       <button class="courses-button" onClick="videoPlayerChange('${key.video}')">
+       <i class="fa fa-video-camera" aria-hidden="true"></i>
+       ${key.name}
+       </button> <br/>
     `;
 });
 

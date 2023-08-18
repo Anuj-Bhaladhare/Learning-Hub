@@ -150,9 +150,6 @@ document.addEventListener("mouseup", () =>
 
 // ====================================================================================
 
-const videoSource = document.querySelector(".example");
-const getVideoPlayer = document.querySelector(".video-player");
-
 const allVideo = [
     {
        name: "introduction of this cource lecture - 1",
@@ -224,16 +221,34 @@ const allVideo = [
     },
 ];
 
-allVideo.forEach( (key) => {
-    videoSource.innerHTML += `
-       <button class="courses-button" onClick="videoPlayerChange('${key.video}')">
-       <i class="fa fa-video-camera" aria-hidden="true"></i>
-       ${key.name}
-       </button> <br/>
-    `;
-});
+const videoSource = document.querySelector(".example");
+const getVideoPlayer = document.querySelector(".video-player");
+const getPrevbtn = document.querySelector(".prev-btn");
+const getNextbtn = document.querySelector(".next-btn");
 
-const videoPlayerChange = (videoUrl) => {
-    getVideoPlayer.src = videoUrl;
+let currentVideoIndex = 0;
+
+allVideo.forEach( (key, index) => {
+  videoSource.innerHTML += `
+     <button class="courses-button" onClick="videoPlayerChange(${index})">
+     <i class="fa fa-video-camera" aria-hidden="true"></i>
+     ${key.name}
+     </button> <br/>
+  `;
+})
+
+const videoPlayerChange = (index) => {
+  const selectedVideo = allVideo[index];
+  getVideoPlayer.src = selectedVideo.video;
+  currentVideoIndex = index;
 }
 
+getNextbtn.addEventListener("click", () => {
+    currentVideoIndex = (currentVideoIndex + 1) % allVideo.length;
+    videoPlayerChange(currentVideoIndex);
+}) 
+
+getPrevbtn.addEventListener("click", () => {
+     currentVideoIndex = (currentVideoIndex - 1 + allVideo.length) % allVideo.length;
+     videoPlayerChange(currentVideoIndex)
+}) 

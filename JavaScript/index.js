@@ -140,10 +140,7 @@ let enroll = true;
 let dashboardList = [];
 
 const setvalue = () => {
-    if(enroll == true){
-        enroll = false;
-    }
-    else{
+    if(enroll){
         enroll = false;
     }
 }
@@ -160,7 +157,7 @@ const initApp = () => {
                         <div>
                             ${
                                 enroll
-                                    ? ('<button onClick="setvalue()" type="button" class="btn btn-primary">Enroll Free</button>')
+                                    ? ('<button type="button" onClick="setvalue()" class="btn btn-primary">Enroll Free</button>')
                                     : ('<button type="button" class="btn btn-primary">Check Your Dashboard</button>')
                             }
                         </div>
@@ -170,17 +167,6 @@ const initApp = () => {
         `;
     });
 }
-
 initApp();
 
-const addToDashboard = (key) => {
-    if(dashboardList[key] == null){
-        dashboardList[key] = allCourses[key];
-        dashboardList[key].quantity = 1;
-    }
-    relatedDashboard();
-}
 
-const relatedDashboard = () => {
-
-}

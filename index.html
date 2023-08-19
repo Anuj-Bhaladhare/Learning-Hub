@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduFlex Academy</title>
+
+     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- External Css link -->
     <link rel="stylesheet" href="./css/index.css">
-    <title>Study Zone</title>
+
+    <!-- Bootstrap Icons link -->
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
 </head>
 <body>
 
     <div>
 
-        <!-- ================================== NAVBAAR ================================= -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navbaar-container">
+        <!-- Navigation bar Content  -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-conatiner ">
     
-                <a class="navbar-brand" href="#">Study Zone</a>
+                <a class="navbar-brand " href="#"><img src="./assest/index-images/new-logo.png" alt="logo-design" class="img-fluid logo-design"></a>
     
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Menu Section Open -->
     
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -34,43 +47,92 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services
+                                Explore
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <a class="dropdown-item" href="#">Service 1</a>
-                                <a class="dropdown-item" href="#">Service 2</a>
-                                <a class="dropdown-item" href="#">Service 3</a>
-                            </div>
-                        </li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">IT & Software</a></li>
+                                <li><a class="dropdown-item" href="#">Design</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="#">Photography & Video</a></li>
+                              </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Programs
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bachelor's Degree</a></li>
+                                    <li><a class="dropdown-item" href="#">Master's Degree</a></li>
+                                    <li><a class="dropdown-item" href="#">Diploma</a></li>
+                                    <li><a class="dropdown-item" href="#">Certificates</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Intership Program</a></li>
+                                  </ul>
+                                </li>
+                            
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Menu Section Close -->
     
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+
+                        
+                       <!-- User and Cart Icons -->
+                     <div class="icon-container d-flex my-auto m-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-circle m-2" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart3 m-2 " viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                     </div>
+
+
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Dashboard</button></a>
+                            <a class="nav-link" href="#">
+                            <button class="button-62" role="button">Dashboard</button>
+                            </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Login ➧</button></a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
+
+
     
-        <!-- ================================== MAIN CONTENT ================================= -->
+        <!--  MAIN CONTENT  -->
+        
+        <div class=" mx-auto main-container" style="background-image: linear-gradient(to right, #f0d3ce, #efd4d9, #ebd7e2, #e4dae9, #dddeec, #dadeec, #d7dfea, #d4dfe9, #d1dde7, #cedae6, #ccd8e5, #c9d5e3);">
 
-
-        <div class="container mt-5">
             <div class="row main-content">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 main-description">
                     <h1>Earn <span>Knowledge </span> & Complete Your Lesson</h1>
                     <p>Empower your learning journey with our interactive e-learning platform. Access a diverse range of courses, expert instructors, and engaging resources. Achieve your goals at your own pace, anywhere, anytime. Join our vibrant community and embrace a new era of education.</p>
+
+
+                    <div class="container-button d-flex mt-5  " >
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-light  justify-content-center text-nowrap">Try learning for free</button></a>
+                           
+                            <a class="nav-link" href="#"><button type="button" class="btn btn-success  justify-content-center text-nowrap">View subcription plans</button></a>
+                    </div>
+
+                
+
                 </div>
-                <div class="col-sm-6 col-md-4">
-                    <img src="./assest/index-images/main-img.png" class="img-fluid main-img" alt="Study Zone">
+                <div class="col-sm-6 col-md-6  me-3">
+                    <img src="./assest/index-images/edu-vector-removebg.png" class="img-fluid main-img" alt="Study Zone">
                 </div>
             </div>
         </div>

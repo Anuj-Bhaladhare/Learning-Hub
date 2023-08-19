@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Form</title>
+    <title>Sign Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/index.css">
     <style>
+
         body{
             font-family: 'poppies',sans-serif;
-            background:rgb(250, 244, 234);
+            background:rgb(248, 239, 219);
         }
         .box-area{
             width: 930px;
@@ -19,9 +20,6 @@
         }
         ::placeholder{
             font-size: 16px;
-        }
-        .sign-in{
-            background: linear-gradient(to bottom right, #fccbd4, #f4d4c1);
         }
         @media only screen and (max-width:768px){
             .box-area{
@@ -35,6 +33,7 @@
                 padding: 20px;
             }
         }
+        
     </style>
     
   </head>
@@ -113,18 +112,18 @@
              </div>
 
 
-                <li class="nav-item active">
+                <li class="nav-item active ">
                     <a class="nav-link" href="./Pages/dashBoard.html">
                        <button class="button-62" role="button">Dashboard</button>
                     </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active ">
                     <a class="nav-link" href="/Pages/Sign Up.html">
                        <button class="button-62" role="button">Sign Up ➧</button>
                     </a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item active ">
                     <a class="nav-link" href="/Pages/login-page.html">
                        <button class="button-62" role="button">Login ➧</button>
                     </a>
@@ -135,25 +134,30 @@
             </ul>
         </div>
     </nav>
-<!---main-container--->
-    <div class="container d-flex justify-content-center align-items-center min-vh-100 rounded">
+
+  
+ <!---main-container--->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
  <!-------login-container-->  
         <div class="row border round-5 p-3 bg-white shadow box-area">
  <!-------left box----->
-     <div class="col-md-6 rounded-4 d-flex justify-content-center align-item-center flex-column left-box" style="background:rgb(248, 203, 218);">
+     <div class="col-md-6 rounded-4 d-flex justify-content-center align-item-center flex-column left-box" style="background:rgb(240, 230, 233);">
         <div class="featured-img mb-3">
-            <img src="/assest/index-images/login-img/study-logo.avif" class="img-fluid p-3" style="width: 430px;">
+            <img src="/assest/index-images/login-img/study-img1.avif" class="img-fluid p-3" style="width: 450px; height: 400px;">
         </div>
-        <p class="text-dark fs-2 text-center " style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Today is a great day to grow,little one.</p>
+        <p class="text-dark fs-2 text-center " style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">“Do what is right, not what is easy.”</p>
         
      </div>
 <!-----right box------>
        <div class="col-md-6 right-box">
         <div class="row align-item-center">
             <div class="header-text mb-4">
-                <p class="text-black fs-2 text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600;">Welcome Back !!<p>
-                <p class="text-black fs-5 text-center">We are happy to have you login </p>
+                <p class="text-black fs-2 text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600;">Welcome In Study Zone.!!<p>
+                <p class="text-black fs-5 text-center">We are happy to have you create account </p>
       </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control form-control-lg bg-light fs-6"placeholder="Enter Your Name">
+        </div>
       <div class="input-group mb-3">
     <input type="text" class="form-control form-control-lg bg-light fs-6"placeholder="Email address">
     </div>
@@ -163,20 +167,20 @@
     <div class="input-group mb-5 d-flex justify-content-between" >
         <div class="form-check p-3">
             <input type="checkbox" class="form-check-input" id="Formcheck">
-            <label for="Formcheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+            <label for="Formcheck" class="form-check-label text-secondary"><small>I Agree <a href="#">Terms & Condition</a></small></label>
         </div>
         <div class="forgot p-3">
             <small><a href="#" >Forgot Password ?</a></small>
      </div>
     </div>
-    <div class="input-group mb-3">
-        <button class="btn btn-lg btn-primary w-100 fs-6 button-62">Login</button>
+    <div class="input-group mb-3 ">
+        <button class="btn btn-lg btn-primary w-100 fs-5 button-62">Sign Up</button>
     </div>
     <div class="input-group mb-3">
-        <button class="btn btn-lg btn-light w-100 fs-6 sign-in"><img src="/assest/index-images/login-img/search.png"style="width:30px" class="me-2 rounded-circle"><small>Sign in with Google</small></button>
+        <button class="btn btn-lg btn-light w-100 fs-6"><img src="/assest/index-images/login-img/search.png"style="width:30px" class="me-2 rounded-circle"><small>Sign up with Google</small></button>
     </div>
     <div class="row">
-        <small class="justify-content-between ">Don't have account?<a href="/Pages/Sign Up.html"><button class="btn btn-sm m-3 btn-primary w-50 fs-6 button-62">Sign Up</button></a></small>
+        <small class="justify-content-between">Already have an account? <a href="/Pages/login-page.html"class="fs-5">Log in</a></small>
     </div>
      </div>
      </div>

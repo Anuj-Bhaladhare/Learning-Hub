@@ -14,7 +14,7 @@ const counterNum = (number, position) => {
     }, 10);
 }
 
-counterNum(688, getvalue1);
+counterNum(758, getvalue1);
 counterNum(564, getvalue2);
 counterNum(968, getvalue3);
 counterNum(759, getvalue4);
@@ -168,5 +168,51 @@ const initApp = () => {
     });
 }
 initApp();
+
+
+
+// ================================================================================================
+//         // Simulate product data
+//         const product = [
+//             { 
+//                 id: 1,
+//                 name: 'somanwasa',
+//                 price: 19.99
+//             },
+//             { 
+//                 id: 2,
+//                 name: 'kandakali',
+//                 price: 58.99
+//             },
+//             { 
+//                 id: 3,
+//                 name: 'makhanas',
+//                 price: 95.99
+//             },
+//             { 
+//                 id: 4,
+//                 name: 'saddiaf',
+//                 price: 75.99
+//             },
+//         ]
+        
+//         const productDisplay = document.querySelector('.example');
+
+//         product.forEach((item, index) => {
+//             productDisplay.innerHTML += `
+//                 <p>${item.id}</p>
+//                 <p>${item.name}</p>
+//                 <p>${item.price}</p>
+//                 <button onClick="addToCartBtn(${index})">Add to cart</button>
+//             `;
+//         })
+
+//         // Function to add item to cart
+//         function addToCartBtn(index) {
+//             let cart = JSON.parse(localStorage.getItem('anuj')) || [];
+//             cart.push(product[index]);
+//             localStorage.setItem('anuj', JSON.stringify(cart));
+//             alert('Item added to cart!');
+//         }
 
 

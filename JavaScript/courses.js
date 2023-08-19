@@ -1,4 +1,4 @@
-const allData = [
+const allCoursesData = [
     {
         id: "WD101",
         title: "Web Development Fundamentals",
@@ -111,30 +111,85 @@ const allData = [
     },
 ];
 
-const getData = document.querySelector(".example");
-let enroll = true; 
+const courseDisplay = document.querySelector(".example");
 
-allData.forEach((key) => {
-    getData.innerHTML += `
+allCoursesData.forEach((key, index) => {
+    courseDisplay.innerHTML += `
         <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
             <div class="card">
                 <div class="card-body">
                     <p>${key.title}</p>
                     <img class='img-fluid' src='${key.image}'>
                     <p>${key.description}</p>
-                    <div>
-                        ${
-                            enroll
-                                ? '<button type="button" class="btn btn-primary">Enroll Free</button>'
-                                : '<button type="button" class="btn btn-primary">Check Your Dashboard</button>'
-                        }
-                    </div>
+                    <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Enroll Free</button>
                 </div>
             </div>
         </div>
     `;
 });
 
+// Function to add item to dashboard
+function addToDashboardBtn(index) {
+    let courses = JSON.parse(localStorage.getItem('dashboard')) || [];
+    courses.push(allCoursesData[index]);
+    localStorage.setItem('dashboard', JSON.stringify(courses)); 
+    alert('Course added to dashboard!'); 
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================================================================================
+//         // Simulate product data
+//         const product = [
+//             { 
+//                 id: 1,
+//                 name: 'somanwasa',
+//                 price: 19.99
+//             },
+//             { 
+//                 id: 2,
+//                 name: 'kandakali',
+//                 price: 58.99
+//             },
+//             { 
+//                 id: 3,
+//                 name: 'makhanas',
+//                 price: 95.99
+//             },
+//             { 
+//                 id: 4,
+//                 name: 'saddiaf',
+//                 price: 75.99
+//             },
+//         ]
+        
+//         const productDisplay = document.querySelector('.example');
+
+//         product.forEach((item, index) => {
+//             productDisplay.innerHTML += `
+//                 <p>${item.id}</p>
+//                 <p>${item.name}</p>
+//                 <p>${item.price}</p>
+//                 <button onClick="addToCartBtn(${index})">Add to cart</button>
+//             `;
+//         })
+
+//         // Function to add item to cart
+//         function addToCartBtn(index) {
+//             let cart = JSON.parse(localStorage.getItem('anuj')) || [];
+//             cart.push(product[index]);
+//             localStorage.setItem('anuj', JSON.stringify(cart));
+//             alert('Item added to cart!');
+//         }
 
 

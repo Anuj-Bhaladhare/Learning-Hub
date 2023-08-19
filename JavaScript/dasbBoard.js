@@ -13,7 +13,7 @@ dashBoardList.forEach(key => {
                     <p>${key.title}</p>
                     <img class='img-fluid' src='${key.image}'>
                     <p>${key.description}</p>
-                    <a href="./video-player.html">
+                    <a href="./video-player.html" target="_blank">
                        <button type="button" class="btn btn-primary">Start learning</button>
                     </a>
                 </div>

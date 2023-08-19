@@ -14,7 +14,7 @@ const counterNum = (number, position) => {
     }, 10);
 }
 
-counterNum(688, getvalue1);
+counterNum(758, getvalue1);
 counterNum(564, getvalue2);
 counterNum(968, getvalue3);
 counterNum(759, getvalue4);

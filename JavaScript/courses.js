@@ -1,4 +1,4 @@
-const allData = [
+const allCoursesData = [
     {
         id: "WD101",
         title: "Web Development Fundamentals",
@@ -111,29 +111,40 @@ const allData = [
     },
 ];
 
-const getData = document.querySelector(".example");
-let enroll = true; 
+const courseDisplay = document.querySelector(".example");
 
-allData.forEach((key) => {
-    getData.innerHTML += `
+allCoursesData.forEach((key, index) => {
+    courseDisplay.innerHTML += `
         <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
             <div class="card">
                 <div class="card-body">
                     <p>${key.title}</p>
                     <img class='img-fluid' src='${key.image}'>
                     <p>${key.description}</p>
-                    <div>
-                        ${
-                            enroll
-                                ? '<button type="button" class="btn btn-primary">Enroll Free</button>'
-                                : '<button type="button" class="btn btn-primary">Check Your Dashboard</button>'
-                        }
-                    </div>
+                    <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Enroll Free</button>
                 </div>
             </div>
         </div>
     `;
 });
+
+// Function to add item to dashboard
+function addToDashboardBtn(index) {
+    let courses = JSON.parse(localStorage.getItem('dashboard')) || [];
+    courses.push(allCoursesData[index]);
+    localStorage.setItem('dashboard', JSON.stringify(courses)); 
+    alert('Course added to dashboard!'); 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: 'poppies',sans-serif;
+            background:rgb(250, 244, 234);
+        }
+        .box-area{
+            width: 930px;
+        }
+        .right-box{
+            padding: 40px 30px 40px 40px;
+        }
+        ::placeholder{
+            font-size: 16px;
+        }
+        @media only screen and (max-width:768px){
+            .box-area{
+                margin: 0 10px;
+            }
+            .left-box{
+                height: 100px;
+                overflow: hidden;
+            }
+            .right-box{
+                padding: 20px;
+            }
+        }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbaar-container">
+    
+        <a class="navbar-brand px-5" href="#">Study Zone</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto px-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/courses.html">Courses</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Dashboard</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Sign Up ➧</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Login ➧</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ <!---main-container--->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+ <!-------login-container-->  
+        <div class="row border round-5 p-3 bg-white shadow box-area">
+ <!-------left box----->
+     <div class="col-md-6 rounded-4 d-flex justify-content-center align-item-center flex-column left-box" style="background:rgb(249, 192, 211);">
+        <div class="featured-img mb-3">
+            <img src="/Study-Zone-2/assest/login-img/study-logo.avif" class="img-fluid p-3" style="width: 430px;">
+        </div>
+        <p class="text-dark fs-2 text-center " style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Today is a great day to grow,little one.</p>
+        
+     </div>
+<!-----right box------>
+       <div class="col-md-6 right-box">
+        <div class="row align-item-center">
+            <div class="header-text mb-4">
+                <p class="text-black fs-2 text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600;">Welcome Back !!<p>
+                <p class="text-black fs-5 text-center">We are happy to have you login </p>
+      </div>
+      <div class="input-group mb-3">
+    <input type="text" class="form-control form-control-lg bg-light fs-6"placeholder="Email address">
+    </div>
+      <div class="input-group mb-1">
+        <input type="password" class="form-control form-control-lg bg-light fs-6"placeholder="Password">
+    </div>
+    <div class="input-group mb-5 d-flex justify-content-between" >
+        <div class="form-check p-3">
+            <input type="checkbox" class="form-check-input" id="Formcheck">
+            <label for="Formcheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+        </div>
+        <div class="forgot p-3">
+            <small><a href="#" >Forgot Password ?</a></small>
+     </div>
+    </div>
+    <div class="input-group mb-3">
+        <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+    </div>
+    <div class="input-group mb-3">
+        <button class="btn btn-lg btn-light w-100 fs-6"><img src="/Study-Zone-2/assest/login-img/search.png"style="width:30px" class="me-2 rounded-circle"><small>Sign in with Google</small></button>
+    </div>
+    <div class="row">
+        <small class="justify-content-between ">Don't have account?<a href="Sign Up.html "class="fs-5">Sign Up</a></small>
+    </div>
+     </div>
+     </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

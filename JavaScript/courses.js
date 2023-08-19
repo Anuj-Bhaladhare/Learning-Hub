@@ -121,7 +121,7 @@ allCoursesData.forEach((key, index) => {
                     <p>${key.title}</p>
                     <img class='img-fluid' src='${key.image}'>
                     <p>${key.description}</p>
-                    <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Enroll Free</button>
+                    <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Add To Your Dashboard</button>
                 </div>
             </div>
         </div>

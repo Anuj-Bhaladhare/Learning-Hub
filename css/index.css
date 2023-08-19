@@ -86,4 +86,7 @@
     height: 1px;
     background-color: white;
   }
-  
+  .icon{
+    height: 60px;
+    margin-right: 5px;
+  }

@@ -174,5 +174,10 @@
    button:hover .button-text {
     color: #fff;
    }
+   .baground{
+    background-image: url(./../assest/index-images/bg3.png);
+    height: 300px;
+    width: 100%;
+   }
 
    

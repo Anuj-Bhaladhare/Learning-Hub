@@ -176,6 +176,8 @@
    }
   .link{
     color: orangered;
-
-}
+  }
+  .link:hover{
+    color: orangered ;
+  }
    

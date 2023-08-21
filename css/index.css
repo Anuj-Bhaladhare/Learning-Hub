@@ -201,7 +201,12 @@ button:hover .button-text {
 .features .feature-cards {
   width: 30%;
 }
-
+.baground{
+  background-image: url(./../assest/index-images/bg3.png);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+ }
 @media screen and (max-width: 991px) {
   .nav-2 .icon-container svg {
     display: none;

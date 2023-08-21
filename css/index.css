@@ -8,7 +8,7 @@
 }
 
 .nav-conatiner{
-    height: 60px;
+    height: 70px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -19,7 +19,9 @@
 }
 
 .logo-design{
-    height: 210px;
+    height: 70px;
+    width: 100%;
+    margin-top: 0%;
 
 }
 

@@ -73,3 +73,24 @@
     height: 0.5px;
     background-color: blue;
   }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .cart-box-shadow{
+    box-shadow: 0 26px 58px 0 rgba(84, 130, 255, 0.22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+  }
+  
+  .background-gradiant{
+    background: rgb(255,255,255);
+    background: linear-gradient(76deg, rgba(255,255,255,1) 0%, rgba(255,230,255,1) 53%, rgba(255,255,255,1) 100%);
+  }
+  
+  .second-background-gradiant{
+    background: rgb(254,234,255);
+    background: linear-gradient(36deg, rgba(254,234,255,1) 0%, rgba(255,255,255,1) 49%, rgba(254,233,255,1) 100%);
+  }

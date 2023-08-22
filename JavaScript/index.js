@@ -89,3 +89,28 @@ const initApp = () => {
   });
 };
 initApp();
+
+let thim = true;
+const darkLightTheme = document.querySelector(".dark-light-mode-box");
+const darkLightThemeSecond = document.querySelectorAll(".dark-light-mode-box-2");
+const darkModebtn = document.querySelector(".dark-light-btn");
+
+darkModebtn.addEventListener("click", () => {
+  if (thim) {
+    darkLightThemeSecond.forEach(key => {
+      key.classList.add("dark-mode-2");
+    });
+    thim = false;
+    darkLightTheme.classList.add("dark-mode");
+    darkModebtn.src = "./assest/new-index-image/light-moon.png";
+  } else {
+    darkLightThemeSecond.forEach(key => {
+      key.classList.remove("dark-mode-2");
+    });
+    thim = true;
+    darkLightTheme.classList.remove("dark-mode");
+    darkModebtn.src = "./assest/new-index-image/dark-moon.png";
+  }
+});
+
+

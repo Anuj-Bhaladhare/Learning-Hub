@@ -53,3 +53,17 @@
   border-color: #812dff;
   color: #812dff;
 }
+
+.dark-mode{
+  background: #000000;
+  color: white;
+}
+
+.dark-mode-2{
+  background: #272727;
+  color: white;
+}
+
+.dark-light-btn{
+  cursor: pointer;
+}

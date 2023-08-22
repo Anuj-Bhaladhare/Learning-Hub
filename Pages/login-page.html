@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
     <style>
         body{
             font-family: 'poppies',sans-serif;
@@ -39,102 +39,72 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-conatiner ">
-    
-        <a class="navbar-brand " href="./index.html"><img src="/assest/index-images/new-logo.png" alt="logo-design" class="img-fluid logo-design"></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center shadow-lg p-3 mb-5 bg-white">
+        <div class="container navbaar-container d-flex align-items-center justify-content-between p-1">
+          
+          <a class="navbar-brand" href="#">E-Learning</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu Section Open -->
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Pages/courses.html">Courses</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Explore
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">IT & Software</a></li>
-                        <li><a class="dropdown-item" href="#">Design</a></li>
-                        <li><a class="dropdown-item" href="#">Marketing</a></li>
-                        <li><a class="dropdown-item" href="#">Lifestyle</a></li>
-                        <li><a class="dropdown-item" href="#">Photography & Video</a></li>
-                      </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Programs
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Bachelor's Degree</a></li>
-                            <li><a class="dropdown-item" href="#">Master's Degree</a></li>
-                            <li><a class="dropdown-item" href="#">Diploma</a></li>
-                            <li><a class="dropdown-item" href="#">Certificates</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Intership Program</a></li>
-                          </ul>
-                        </li>
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./Pages/courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./Pages/courses.html">Tutorials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./Pages/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./Pages/">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="./Pages/dashBoard.html">Dashboard</a>
+              </li>
             </ul>
-        </div>
-
-        <!-- Menu Section Close -->
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-
-                
-               <!-- User and Cart Icons -->
-             <div class="icon-container d-flex my-auto m-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-circle m-2" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-
-                  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart3 m-2 " viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg> -->
-             </div>
-
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="./Pages/dashBoard.html">
-                       <button class="button-62" role="button">Dashboard</button>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/Pages/Sign Up.html">
-                       <button class="button-62" role="button">Sign Up ➧</button>
-                    </a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="/Pages/login-page.html">
-                       <button class="button-62" role="button">Login ➧</button>
-                    </a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Login ➧</button></a>
-                </li> -->
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/login-page.html">
+                    <button
+                      class="btn nav-button-1 fw-bold text-light"
+                      style="background-color: #7b4bff; border-color: #812dff">Login 
+                    </button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/Sign Up.html">
+                    <button
+                      class="btn nav-button-2 fw-bold text-light"
+                      style="background-color: #ff4b66; border-color: #ff4e69"
+                    >
+                    Sign Up
+                    </button>
+                </a>
+              </li>
             </ul>
+          </div>
+          
         </div>
-    </nav>
+      </nav>
+
 <!---main-container--->
     <div class="container d-flex justify-content-center align-items-center min-vh-100 rounded">
  <!-------login-container-->  
@@ -182,6 +152,80 @@
      </div>
     </div>
 </div>
+
+<footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h3>Learn</h3>
+          <hr class="line" />
+          <p>
+            eLearning helps learners discover, read, watch and interact—at
+            their own pace. This type of customized eLearning creates an
+            educational atmosphere more conducive to learning and retention.
+            JOIN US FOR BETTER LEARNING !!
+          </p>
+          <a href="">About Us</a><br />
+          <a href="">Terms & policy</a>
+        </div>
+
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h3>EduFlex</h3>
+          <hr class="line" />
+          <p>Email: info@EduFlex.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>What We Offer</p>
+          <p>Leadership</p>
+          <p>Careers</p>
+          <p>Catalog</p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h3>Useful Links</h3>
+          <hr class="line" />
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="#" class="text-light text-decoration-none"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="text-light text-decoration-none"
+                >Terms of Use</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="text-light text-decoration-none">FAQ</a>
+            </li>
+            <br />
+            <a href="#" class="text-light me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-light me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-light me-3"
+              ><i class="fab fa-instagram"></i></a
+            ><br />
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h3>Newsletter</h3>
+          <hr class="line" />
+          <p>Subscribe to our newsletter for updates.</p>
+          <form>
+            <input
+              type="email"
+              class="form-control mb-2"
+              placeholder="Your Email"
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>

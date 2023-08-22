@@ -1,0 +1,8 @@
+.collapse{
+    margin-left: 17%;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff0000; 
+    font-weight: bold;
+  }

@@ -76,7 +76,7 @@ const initApp = () => {
   allCourses.forEach((key) => {
     coursesCard.innerHTML += `
         <div class="col-lg-4 col-md-6 mb-4 pt-5">
-          <a href="">
+          <a href="./Pages/courses.html">
                 <div class="card cart-box-shadow">
                     <div class="card-body">
                     <img src="${key.image}" class="card-img-top" alt="Image 2" />

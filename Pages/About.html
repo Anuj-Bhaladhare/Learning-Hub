@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/index.css">
+
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Kanit:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;500&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-conatiner{
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.main-container{
+    height: 650px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.logo-design{
+    height: 210px;
+
+}
+.icons-card {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        right: 5px;
+        height: auto;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 6px;
+      }
+      
+      .icon {
+        display: block;
+        margin-bottom: 5px;
+      }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-conatiner ">
+    
+        <a class="navbar-brand " href="../index.html"><p class="my-auto" style="font-weight: bold; font-family: POPPINS; ">Learning<span class="px-1" style="font-weight: bold; font-family: POPPINS; border-radius: 18px;background-color: orange; color:whitesmoke;">Hub</span></p></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Section Open -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/courses.html">Courses</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">IT & Software</a></li>
+                        <li><a class="dropdown-item" href="#">Design</a></li>
+                        <li><a class="dropdown-item" href="#">Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                        <li><a class="dropdown-item" href="#">Photography & Video</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bachelor's Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Master's Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Diploma</a></li>
+                            <li><a class="dropdown-item" href="#">Certificates</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Intership Program</a></li>
+                          </ul>
+                        </li>
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menu Section Close -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+                
+               <!-- Dark mode Icons -->
+             <div class="icon-container d-flex my-auto m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-moon-stars-fill m-2" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                  </svg>
+
+             </div>
+
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Pages/dashBoard.html">
+                       <button class="button-62" role="button">Dashboard</button>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Pages/Sign Up.html">
+                       <button class="button-62" role="button">Sign Up ➧</button>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Pages/login-page.html">
+                       <button class="button-62" role="button">Login ➧</button>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Login ➧</button></a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="Achievements w-100 h-auto d-flex justify-content-between" style="margin-bottom: 20px;">
+        <div class="left-part w-50 h-auto bg-black me-auto d-flex"><img src="../assest/index-images/edu-vector7.jpeg.jpg"
+                style="width: 1000px;"></div>
+        <div class="right-part w-50 h-auto bg-transparent  ms-auto ">
+            <h1 class="text-center">Achievements</h1><br>
+            <h4 class="text-start w-85 " style="backdrop-filter: blur(10px); border: 1px solid rgb(232, 224, 224); border-radius: 20px; padding: 30px;">
+                Celebrate our e-learning platform's achievements! Thousands of eager students benefit from diverse, high-quality courses, driving personal and professional growth.<br> Our innovation in online education is showcased through awards, solidifying our commitment to excellence.<br> We're shaping the future of learning, inspiring learners to succeed.</h4><br><br>
+                <div class="sm-cards d-flex justify-content-evenly w-100 h-auto">
+                    <div class="sm-card bg-transparent border border-black border border-1 rounded-3 text-center justify-content-center "
+                    style="padding: 5px 2px 2px 2px; width: 180px; height: 200px;">
+                        <h2 class="icon d-flex justify-content-center align-items-center  border border-1 rounded-4 ms-auto me-auto " style="height: 65px; width: 60px;background-color: antiquewhite;"><i class="fa-solid fa-video" style="color: #000000; "></i></h2><br>
+                        <h2>450+</h2>
+                        <h2>courses</h2>
+                    </div>
+                    <div class="sm-card bg-transparent border border-black border border-1 rounded-3 text-center justify-content-center "
+                    style="padding: 5px 2px 2px 2px; width: 180px; height: 200px;">
+                        <h2 class="icon d-flex justify-content-center align-items-center  border border-1 rounded-4 ms-auto me-auto " style="height: 65px; width: 60px;background-color: antiquewhite;"><i class="fa-solid fa-users" style="color: #000000; "></i></h2><br>
+                        <h2>79,000+</h2>
+                        <h2>Students</h2>
+                    </div>
+                    <div class="sm-card bg-transparent border border-black border border-1 rounded-3 text-center justify-content-center "
+                    style="padding: 5px 2px 2px 2px; width: 180px; height: 200px;">
+                        <h2 class="icon d-flex justify-content-center align-items-center  border border-1 rounded-4 ms-auto me-auto " style="height: 65px; width: 60px;background-color: antiquewhite;"><i class="fa-solid fa-award" style="color: #000000; "></i></h2><br>
+                        <h2>26</h2>
+                        <h2>Awards</h2>
+                    </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="our-team w-100" style="background-image: linear-gradient(to right, #f0d3ce, #efd4d9, #ebd7e2, #e4dae9, #dddeec, #dadeec, #d7dfea, #d4dfe9, #d1dde7, #cedae6, #ccd8e5, #c9d5e3);; padding-bottom: 40px; padding-bottom: 50px;">
+        <h1 class=" d-flex justify-content-center p-5 ">Meet Our Team</h1>
+        <div class="bg-cards d-flex justify-content-around">
+            <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252); border:2px solid rgb(255, 141, 100);"><img src="../assest/About-images/Ajinkya Daf.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                <h2>Ajinkya Daf</h2>
+                <h3>Software </h3><div class="icons-card">
+                    <i class="icon fas fa-star">SEFSF</i><br><br>
+                    <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                    <i class="icon fas fa-share">AFSef</i><br><br>
+                  </div></div>
+                <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252); border:2px solid rgb(255, 164, 130);"><img src="../assest/About-images/" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;">
+                    <h1>####</h1>
+                    <h2>####</h2><div class="icons-card">
+                        <i class="icon fas fa-star">SEFSF</i><br><br>
+                        <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                        <i class="icon fas fa-share">AFSef</i><br><br>
+                      </div></div>
+                    <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252);border:2px solid rgb(168, 161, 161);"><img src="../assest/About-images/Anuj Bhaladhare.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                        <h3>Anuj Bhaladhare</h3>
+                        <h3>####</h3><div class="icons-card">
+                            <i class="icon fas fa-star">SEFSF</i><br><br>
+                            <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                            <i class="icon fas fa-share">AFSef</i><br><br>
+                          </div></div>
+                        <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252);border:2px solid rgb(103, 103, 103);"><img src="../assest/About-images/Sachi Ramteke.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                            <h2>Sachi Ramteke</h2>
+                            <h3>####</h3><div class="icons-card">
+                                <i class="icon fas fa-star">SEFSF</i><br><br>
+                                <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                                <i class="icon fas fa-share">AFSef</i><br><br>
+                              </div></div>
+        </div>
+        <div class="bg-cards d-flex justify-content-around mt-lg-5">
+            <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px;background-color: rgb(252, 252, 252);border:2px solid rgb(255, 141, 100);"><img src="../assest/About-images/Jeetu Annewar.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                <h2>Jeetu Annewar</h2>
+                <h3>####</h3><div class="icons-card">
+                    <i class="icon fas fa-star">SEFSF</i><br><br>
+                    <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                    <i class="icon fas fa-share">AFSef</i><br><br>
+                  </div></div>
+                <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252);border:2px solid rgb(255, 164, 130);"><img src="/assest/About-images/" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                    <h2></h2>
+                    <h3>####</h3><div class="icons-card">
+                        <i class="icon fas fa-star">SEFSF</i><br><br>
+                        <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                        <i class="icon fas fa-share">AFSef</i><br><br>
+                      </div></div>
+                    <div class="card  d-flex  align-items-center justify-content-center " style="width: 250px; height: 300px; background-color:rgb(252, 252, 252);border:2px solid rgb(168, 161, 161);"><img src="../assest/About-images/Pawar Akanksha.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;"><br>
+                        <h2></h2>
+                        <h3>####</h3><div class="icons-card">
+                            <i class="icon fas fa-star">SEFSF</i><br><br>
+                            <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                            <i class="icon fas fa-share">AFSef</i><br><br>
+                          </div></div>
+                        <div class="card  d-flex  align-items-center justify-content-center  " style="width: 250px; height: 300px; background-color: rgb(252, 252, 252);border:2px solid rgb(103, 103, 103);"><img src="../assest/index-images/IMG_20220614_190313.jpg" class="align-items-center justify-content-center border border-1 rounded-4" style="width: 160px; height: 160px;">
+                            <h2>####</h2>
+                            <h2>####</h2><div class="icons-card">
+                                <i class="icon fas fa-star">SEFSF</i><br><br>
+                                <i class="icon fas fa-heart">AEFAEF</i><br><br>
+                                <i class="icon fas fa-share">AFSef</i><br><br>
+                              </div></div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="bg-dark text-light mt py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h3>Learn</h3>
+                    <hr class="line">
+                    <p> eLearning helps learners discover, read, watch and interact—at their own pace. This type of customized eLearning creates an educational atmosphere more conducive to learning and retention.
+                        JOIN US FOR BETTER LEARNING !!
+                    </p>
+                    <a href="">About Us</a><br>
+                    <a href="">Terms & policy</a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>EduFlex</h3>
+                    <hr class="line">
+                    <p>Email: info@EduFlex.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>What We Offer</p>
+                    <p>Leadership</p>
+                    <p>Careers</p>
+                    <p>Catalog</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>Useful Links</h3>
+                    <hr class="line">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms of Use</a></li>
+                        <li><a href="#" class="text-light">FAQ</a></li><br>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f" ></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter" ></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a><br>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>Newsletter</h3>
+                    <hr class="line">
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        
+</div>
+
+<script src="../JavaScript/index.js"></script>
+<script src="https://kit.fontawesome.com/c33a357a73.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+     const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  const iconsCard = card.querySelector('.icons-card');
+
+  card.addEventListener('mouseenter', () => {
+    iconsCard.style.display = 'block';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    iconsCard.style.display = 'none';
+  });
+});
+  </script>
+</body>
+
+</html>
+
+
+

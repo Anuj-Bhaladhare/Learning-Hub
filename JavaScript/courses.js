@@ -111,6 +111,21 @@ const allCoursesData = [
     },
 ];
 
+
+// ========================== API CALL ==============================
+// const apiKey = "https://codehelp-apis.vercel.app/api/get-top-courses";
+// const fetchData = async() => {
+//     try{
+//         let responce = await fetch(apiKey);
+//         let data = await responce.json();
+//         console.log(data);
+//     }
+//     catch(err){
+//         console.log(err);
+//     }
+// }
+
+
 const courseDisplay = document.querySelector(".example");
 
 allCoursesData.forEach((key, index) => {
@@ -135,3 +150,4 @@ function addToDashboardBtn(index) {
     localStorage.setItem('dashboard', JSON.stringify(courses)); 
     alert('Course added to dashboard!'); 
 }
+

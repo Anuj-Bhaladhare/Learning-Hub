@@ -11,7 +11,7 @@ const counterNum = (number, position) => {
     if (i > number) {
       clearInterval(interval);
     }
-  }, 20);
+  }, 10);
 };
 
 counterNum(758, getvalue1);

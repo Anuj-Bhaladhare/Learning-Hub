@@ -244,11 +244,18 @@ const videoPlayerChange = (index) => {
 }
 
 getNextbtn.addEventListener("click", () => {
-    currentVideoIndex = (currentVideoIndex + 1) % allVideo.length;
-    videoPlayerChange(currentVideoIndex);
-}) 
+  if (currentVideoIndex - 1 < 0) {
+      videoPlayerChange(allVideo.length - 1);
+  } else {
+      videoPlayerChange(currentVideoIndex - 1);
+  }
+})
 
 getPrevbtn.addEventListener("click", () => {
-     currentVideoIndex = (currentVideoIndex - 1 + allVideo.length) % allVideo.length;
-     videoPlayerChange(currentVideoIndex)
-}) 
+
+  if (currentVideoIndex >= allVideo.length - 1) {
+      videoPlayerChange(0);
+  } else {
+      videoPlayerChange(currentVideoIndex + 1);
+  }
+})

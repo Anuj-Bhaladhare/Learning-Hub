@@ -19,7 +19,7 @@ const allCoursesData = [
     },
     {
         id	:"MD401",
-        title	:"Mobile App Development with React Native",
+        title	:"Mobile Development React Native",
         description	:"This course teaches students how to build native mobile apps using the React Native framework. Students will learn how to create cross-platform apps that work on both iOS and Android devices, using a single codebase.",
         image	:"https://codehelp-apis.vercel.app/get-top-courses/Development/Mobile%20App%20Development%20With%20React%20Native.png",
     },
@@ -113,35 +113,52 @@ const allCoursesData = [
 
 
 // ========================== API CALL ==============================
-// const apiKey = "https://codehelp-apis.vercel.app/api/get-top-courses";
-// const fetchData = async() => {
-//     try{
-//         let responce = await fetch(apiKey);
-//         let data = await responce.json();
-//         console.log(data);
-//     }
-//     catch(err){
-//         console.log(err);
-//     }
-// }
+const apiKey = "https://codehelp-apis.vercel.app/api/get-top-courses";
+const fetchData = async() => {
+    try{
+        let responce = await fetch(apiKey);
+        let data = await responce.json();
+        console.log(data);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
 
 
 const courseDisplay = document.querySelector(".example");
 
+// allCoursesData.forEach((key, index) => {
+//     courseDisplay.innerHTML += `
+//         <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
+//             <div class="card">
+//                 <div class="card-body cart-box-shadow"style="max-height: 30rem; max-width: 22rem;">
+//                     <p class="fw-bold" style="font-size: 1.2rem;">${key.title}</p>
+//                     <img class='img-fluid' src='${key.image}'>
+//                     <p>${key.description}</p>
+//                     <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Add To Your Dashboard</button>
+//                 </div>
+//             </div>
+//         </div>
+//     `;
+// });
+
+
 allCoursesData.forEach((key, index) => {
     courseDisplay.innerHTML += `
         <div class="col-sm-6 col-md-6 col-lg-4 mt-5">
-            <div class="card">
+            <div class="card" style="max-height: 30rem; max-width: 22rem;">
                 <div class="card-body cart-box-shadow">
-                    <p class="fw-bold" style="font-size: 1.2rem;">${key.title}</p>
+                    <h6 class="fw-bold text-black text-center" style="font-size: 1.2rem">${key.title}</h6>
                     <img class='img-fluid' src='${key.image}'>
-                    <p>${key.description}</p>
+                    <p>${allCoursesData[2].description}</p>
                     <button onClick="addToDashboardBtn(${index})" type="button" class="btn btn-primary">Add To Your Dashboard</button>
                 </div>
             </div>
         </div>
     `;
 });
+
 
 // Function to add item to dashboard
 function addToDashboardBtn(index) {

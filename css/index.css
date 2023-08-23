@@ -67,3 +67,7 @@
 .dark-light-btn{
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}

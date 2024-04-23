@@ -1,12 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    firstName:{
-        type:String,
-        required:true,
-        trim:true,
-    },
-    lastName:{
+    fullName:{
         type:String,
         required:true,
         trim:true,
@@ -16,17 +11,17 @@ const userSchema = new mongoose.Schema({
         required:true,
         trim:true,
     },
-    mobile:{
-        type:Number,
-        required:true,
-    },
     password:{
         type:String,
         required:true,
     },
-    gendar:{
-        type:String,
-        enum:["Male", "Female"]
+    createdAt:{
+        type:Date,
+        default:Date.now
+    },
+    updatedAt:{
+        type:Date,
+        default:Date.now
     }
 });
 

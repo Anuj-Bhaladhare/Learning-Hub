@@ -7,7 +7,7 @@ app.use(express.json());
 
 const port = process.env.PORT;
 
-// Allow requests from http://127.0.0.1:5501
+// Allow requests from http://127.0.0.1:5501       http://127.0.0.1:5501/Pages/login-page.html
 app.use(cors({ origin: 'http://127.0.0.1:5501' }));
 
 const databaseConnect = require("./config/dbConnect");

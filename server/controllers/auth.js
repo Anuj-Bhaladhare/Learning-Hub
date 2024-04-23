@@ -7,8 +7,14 @@ require("dotenv").config();
 exports.signup = async (req,res) => {
     try{
         //get data
-        const {firstName, lastName, email, mobile, password, gendar} = req.body;
         console.log("boddddyyyyy", req.body);
+        const {fullName, email, password} = req.body;
+        if(!fullName || !email || !password){
+            return res.status(400).json({
+                success:false,
+                message:'Please fill all the required fields',
+            });
+        }
         //check if user already exist
         const existingUser = await User.findOne({email});
 
@@ -33,15 +39,13 @@ exports.signup = async (req,res) => {
 
         //create entry for User
         const user = await User.create({
-            firstName, 
-            lastName,
+            fullName,
             email,
-            mobile,
             password:hashedPassword,
-            gendar
         })
 
         return res.status(200).json({
+            user: user,
             success:true,
             message:'User Created Successfully',
         });
@@ -82,16 +86,11 @@ exports.login = async (req,res) => {
         const payload = {
             email:user.email,
             id:user._id,
-            role:user.role,
         };
 
         const userDetails = {
-            firstName: user?.firstName,
-            lastName: user?.lastName,
+            fullName: user?.fullName,
             email: user?.email,
-            role: user?.role,
-            createdAt:  user?.createdAt,
-            updatedAt:  user?.updatedAt,
         }
         //verify password & generate a JWT token
         if(await bcrypt.compare(password, user.password) ) {
@@ -126,49 +125,5 @@ exports.login = async (req,res) => {
             message:'Login Failure',
         });
 
-    }
-}
-
-// edit user
-exports.editUser = async (req,res) => {
-    try{
-        const {firstName, lastName, email, mobile, password, gendar} = req.body;
-        if(!firstName || !lastName || !email || !mobile || !password || !gendar) {
-            return res.status(400).json({
-                success:false,
-                message:'Please fill all the details carefully',
-            });
-        }
-
-        let user = await User.findOne({email});
-
-        if(!user) {
-            return res.status(401).json({
-                success:false,
-                message:'User is not registered',
-            });
-        }
-        
-
-        
-    } catch(err) {
-        console.log(err);
-    }
-}
-
-exports.deletUser = async (req,res) => {
-    try{
-        const { email } = req.body;
-
-        if(!email){
-            return res.status(400).json({
-                success:false,
-                message:'Please fill all the details carefully',
-            });
-        }
-
-        let user = await User.findOne({email});
-    } catch (error) {
-        console.log(error);
     }
 }

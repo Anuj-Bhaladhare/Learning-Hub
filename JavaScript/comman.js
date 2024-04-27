@@ -3,6 +3,7 @@ const user_login_sing_details = document.querySelector('.navbar-nav-container');
 const token = localStorage.getItem("token");
 const userName = localStorage.getItem("name");
 
+
 const userLogout = () => {
     localStorage.clear();
     window.location.reload();
@@ -11,6 +12,9 @@ const userLogout = () => {
 if (token && userName) {
     user_login_sing_details.innerHTML = `
         <ul class="navbar-nav">
+            <li>
+                <img src="./../assest/new-index-image/dark-moon.png" class="img-fluid dark-light-btn mt-2" alt="">
+            </li>
             <li class="flex-grow-1">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <span>${userName}</span>
@@ -26,7 +30,7 @@ if (token && userName) {
     user_login_sing_details.innerHTML = `
         <ul class="navbar-nav">
             <li>
-                <img src="./assets/new-index-image/dark-moon.png" class="img-fluid dark-light-btn mt-2" alt="">
+                <img src="./../assest/new-index-image/dark-moon.png" class="img-fluid dark-light-btn mt-2" alt="">
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./Pages/login-page.html">
@@ -43,3 +47,27 @@ if (token && userName) {
         </ul>
     `;
 }
+
+
+let mode_d_l = true;
+const darkLightTheme_new = document.querySelector(".dark-light-mode-box");
+const darkLightThemeSecond_new = document.querySelectorAll(".dark-light-mode-box-2");
+const darkModebtn_new = document.querySelector(".dark-light-btn");
+
+darkModebtn_new.addEventListener("click", () => {
+  if (mode_d_l) {
+    darkLightThemeSecond_new.forEach(key => {
+      key.classList.add("dark-mode-2");
+    });
+    mode_d_l = false;
+    darkLightTheme_new.classList.add("dark-mode");
+    darkModebtn_new.src = "./../assest/new-index-image/light-moon.png";
+  } else {
+    darkLightThemeSecond_new.forEach(key => {
+      key.classList.remove("dark-mode-2");
+    });
+    mode_d_l = true;
+    darkLightTheme_new.classList.remove("dark-mode");
+    darkModebtn_new.src = "./../assest/new-index-image/dark-moon.png";
+  }
+});
